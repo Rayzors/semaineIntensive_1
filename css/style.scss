@@ -1,21 +1,28 @@
 @import "compass";
 @import "compass/reset";
 
+* {
+    box-sizing: border-box;
+}
+
 body{
-    background: #f7f7f7;
+    background: #f2efea;
 }
 
 .container{
-    max-width:1200px;
+    max-width:1020px;
     margin: 0 auto;
 }
 
 .header{
-    height: 100vh;
+    height: 600px;
+    position: relative;
 }
 
 .navbar{
-    height: 20vh;
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 
 .navBarContainer{
@@ -45,11 +52,25 @@ body{
     display : flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+}
+
+.concept{
+    background: #ffffff;
+    padding: 150px 0;
 }
 
 .conceptItem{
-    width: 33.333%
+    width: 33.333%;
+    padding: 0 30px;
+
+}
+
+.button{
+    display: inline-block;
+    padding: 1em;
+    background: #ff6a00;
+    color: #ffffff;
+    text-decoration: none;
+    @include border-radius(5px);
 }
 
