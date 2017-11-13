@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -37,14 +38,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   box-sizing: border-box; }
 
 body {
-  background: #f2efea; }
+  background: #fff;
+  color: #252626;
+  font-family: 'Roboto', sans-serif; }
+
+.sectionTitle {
+  text-align: center;
+  font-weight: 300;
+  font-size: 36px;
+  margin-bottom: 1.5em; }
 
 .container {
   max-width: 960px;
   margin: 0 auto;
   padding: 0 5px; }
 
+.concept, .offers {
+  padding: 5em 0; }
+
 .header {
+  background: #f2efea url(../img/header.jpg) center center no-repeat;
+  background-size: cover;
   height: 600px;
   position: relative; }
 
@@ -66,12 +80,23 @@ body {
   align-items: center; }
 
 .inline-list li {
-  display: inline-block; }
+  display: inline-block;
+  margin-left: 1em; }
+.inline-list li a {
+  text-decoration: none;
+  color: #252626; }
+.inline-list li a:hover {
+  text-decoration: underline; }
 
 .edito {
   width: 100%;
   text-align: center;
   margin-top: 10%; }
+.edito p {
+  font-size: 30px;
+  color: #ffffff; }
+.edito .orangeText {
+  color: #ff6a00; }
 
 .searchContainer {
   height: 80vh;
@@ -81,54 +106,67 @@ body {
   justify-content: center;
   align-items: center; }
 
-.conceptContainer {
+.conceptContainer, .offersContainer {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row; }
 
 .searchbarItemsContainer {
   background: #fff;
+  border: 2px solid #ff6a00;
   overflow: hidden;
   width: 70%;
   height: 50px;
-  margin: 1em auto;
+  margin: 2em auto;
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   border-radius: 50px; }
 
 .searchbar {
   width: 80%;
+  font-size: 16px;
+  height: 100%;
   border: none;
-  padding: 1em; }
+  padding: 0 1.5em; }
 
 .searchButton {
   width: 20%;
   height: 100%;
   border: none;
+  color: #ff6a00;
   background: #fff; }
 .searchButton:hover {
   cursor: pointer; }
 
-.concept {
-  background: #ffffff;
-  padding: 150px 0; }
-
-.conceptItem {
+.conceptItem, .offersItemContainer {
   width: 33.333%;
   padding: 0 10px; }
 
+.offersItem {
+  padding: 3em;
+  background: #fff;
+  box-shadow: 20px 50px 70px rgba(0, 0, 0, 0.075); }
+
 .miniTitle {
   font-weight: 600;
-  text-align: center; }
+  text-align: center;
+  margin: 1em 0; }
 
 .conceptText {
   text-align: center; }
+
+.mapContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
 .button {
   display: block;
   padding: 1em 2em;
   background: #ff6a00;
-  color: #ffffff;
+  color: #ffffff !important;
   text-decoration: none;
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
