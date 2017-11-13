@@ -33,20 +33,24 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
 
-<<<<<<< HEAD
-=======
+* {
+  box-sizing: border-box; }
+
 body {
-  background: #f7f7f7; }
+  background: #f2efea; }
 
 .container {
-  max-width: 1200px;
+  max-width: 1020px;
   margin: 0 auto; }
 
 .header {
-  height: 100vh; }
+  height: 600px;
+  position: relative; }
 
 .navbar {
-  height: 20vh; }
+  position: absolute;
+  top: 0;
+  width: 100%; }
 
 .navBarContainer {
   display: flex;
@@ -69,10 +73,22 @@ body {
 .conceptContainer {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center; }
+  flex-direction: row; }
+
+.concept {
+  background: #ffffff;
+  padding: 150px 0; }
 
 .conceptItem {
-  width: 33.333%; }
+  width: 33.333%;
+  padding: 0 30px; }
 
+.button {
+  display: inline-block;
+  padding: 1em;
+  background: #ff6a00;
+  color: #ffffff;
+  text-decoration: none;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px; }
