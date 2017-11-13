@@ -65,7 +65,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-<<<<<<< HEAD
 
 .conceptContainer {
   display: flex;
@@ -76,6 +75,4 @@ body {
 
 .conceptItem {
   width: 33.333%; }
-=======
->>>>>>> bc8a1f94ba91d163977a3a49c9a1c9bde39ac206
->>>>>>> 12554380afed9f38ecd4b59e1cb6bb1800d2ce08
+
