@@ -83,6 +83,12 @@ body {
   width: 33.333%;
   padding: 0 30px; }
 
+.miniTitle {
+  font-weight: 600; }
+
+.conceptText {
+  text-align: center; }
+
 .button {
   display: inline-block;
   padding: 1em;
