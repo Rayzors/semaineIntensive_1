@@ -1,3 +1,43 @@
 @import "compass";
 @import "compass/reset";
 
+body{
+    background: #f7f7f7;
+}
+
+.container{
+    max-width:1200px;
+    margin: 0 auto;
+}
+
+.header{
+    height: 100vh;
+}
+
+.navbar{
+    height: 20vh;
+}
+
+.navBarContainer{
+    display : flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inline-list{
+    li{
+        display: inline-block;
+    }
+}
+
+.searchContainer{
+    height: 80vh;
+    display : flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
