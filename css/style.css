@@ -98,19 +98,18 @@ body {
 
 .navbar {
   position: absolute;
-  top: 0;
   width: 100%; }
 .navbar.fixed {
   background: #252626;
   position: fixed;
-  top: 0;
+  top: -20%;
   left: 0;
   right: 0;
-  font-size: 14px; }
-.navbar.fixed.--open {
-  animation: navbar 0.26s ease forwards; }
-.navbar.fixed.--close {
-  animation: navbarReverse 0.26s ease forwards; }
+  font-size: 14px;
+  z-index: 999;
+  transition: top 0.26s ease; }
+.navbar.fixed.--sticky {
+  top: 0; }
 .navbar.fixed .navBarContainer {
   padding: 0; }
 .navbar.fixed .button {
@@ -178,6 +177,8 @@ body {
   font-size: 16px;
   height: 100%;
   border: none;
+  color: #575a5a;
+  font-weight: 300;
   background: transparent;
   padding: 0 1.5em;
   -moz-transition: ease 0.26s;
@@ -185,7 +186,7 @@ body {
   -webkit-transition: ease 0.26s;
   transition: ease 0.26s; }
 .searchbar:focus {
-  color: #ff6a00; }
+  color: #252626; }
 
 .searchButton {
   width: 10%;

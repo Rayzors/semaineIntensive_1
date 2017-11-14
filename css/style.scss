@@ -85,7 +85,6 @@ body{
 
 .navbar{
     position: absolute;
-    top: 0;
     width: 100%;
     // background: rgba(0,0,0,0.3);
     // @include box-shadow( 0 0 13px rgba(0,0,0,0.075));
@@ -93,16 +92,14 @@ body{
     &.fixed{
         background: $noir;
         position: fixed;
-        top: 0;
+        top: -20%;
         left: 0;right: 0;
         font-size: 14px;
+        z-index: 999;
+        transition: top 0.26s ease;
 
-        &.--open{
-            animation: navbar 0.26s ease forwards;
-        }
-
-        &.--close{
-            animation: navbarReverse 0.26s ease forwards;
+        &.--sticky{
+            top: 0;
         }
         
 
@@ -195,12 +192,14 @@ body{
     font-size: 16px;
     height: 100%;
     border:none;
+    color: lighten($noir,20%);
+    font-weight: 300;
     background: transparent;
     padding: 0 1.5em;
     @include transition(0.26s ease);
 
     &:focus{
-        color: $orange;
+        color: $noir;
     }
 }
 

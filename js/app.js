@@ -3,13 +3,16 @@ var headerH = header.offsetHeight;
 var navbar = document.querySelector(".navbar");
 
 window.addEventListener('scroll', function(){
-    if(scrollY >= headerH && !navbar.classList.contains("fixed")){
+    if (scrollY >= (headerH/2)) {
         navbar.classList.add("fixed");
-        navbar.classList.toggle("--open");
+    }else{
+        navbar.classList.remove("fixed")
     }
-    if(scrollY <= headerH && navbar.classList.contains("fixed")){
-        navbar.classList.add("--close");
-        navbar.classList.remove("--open");
-        navbar.classList.remove("fixed");
+    if(scrollY >= headerH && navbar.classList.contains("fixed")){
+        navbar.classList.add("--sticky");
+    }else{
+        navbar.classList.remove("--sticky");
     }
+
+
 });
