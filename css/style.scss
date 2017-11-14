@@ -13,8 +13,18 @@ $noir : #252626;
 body{
     background: #fff;
     color: $noir;
+    line-height: 1.4;
     font-family: 'Roboto', sans-serif;
 }
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+  }
 
 .sectionTitle{
     text-align: center;
@@ -30,22 +40,28 @@ body{
 }
 
 .concept, .offers{
-    padding: 5em 0;
+    padding: 10em 0;
 }
 
 .header{
     background: #f2efea url(../img/header.jpg) center center no-repeat;
     background-size: cover;
-    height: 600px;
+    height: 100vh;
     position: relative;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;bottom: 0;left: 0;right: 0;
+    background: rgba(0,0,0,0.5);
 }
 
 .navbar{
     position: absolute;
     top: 0;
     width: 100%;
-    background: #fff;
-    @include box-shadow( 0 0 13px rgba(0,0,0,0.075));
+    // background: rgba(0,0,0,0.3);
+    // @include box-shadow( 0 0 13px rgba(0,0,0,0.075));
 }
 
 .navBarContainer{
@@ -64,7 +80,7 @@ body{
 
         a{
             text-decoration : none;
-            color: $noir;
+            color: #fff;
 
             &:hover{
                 text-decoration: underline
@@ -77,18 +93,22 @@ body{
     width: 100%;
     text-align: center;
     margin-top: 10%;
+    z-index: 2;
 
     p{
         font-size: 30px;
         color: #ffffff;
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 1) !important;
+        
     }
     .orangeText{
         color : $orange;
+        font-weight: 600;
     }
 }
 
 .searchContainer{
-    height: 80vh;
+    height: 100%;
     display : flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -103,29 +123,50 @@ body{
 }
 
 .searchbarItemsContainer{
-    background: #fff;
+    display : flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background: rgba(255,255,255,1);
     border: 2px solid $orange;
     overflow: hidden;
     width: 70%;
     height: 50px;
     margin: 2em auto;
-    @include border-radius(50px);    
+    @include border-radius(50px); 
+    box-shadow: 20px 30px 70px rgba(0, 0, 0, 1);
+    
 }
 
 .searchbar{
-    width: 80%;
+    width: 90%;
     font-size: 16px;
     height: 100%;
     border:none;
+    background: transparent;
     padding: 0 1.5em;
+    @include transition(0.26s ease);
+
+    &:focus{
+        color: $orange;
+    }
 }
 
 .searchButton{
-    width: 20%;
+    width: 10%;
     height: 100%;
+    background: transparent;
     border:none;
     color : $orange;
-    background: #fff;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .icon{
+        width: 2.5em;
+        height: 2.5em;
+    }
 
     &:hover{
         cursor: pointer;
@@ -134,26 +175,74 @@ body{
 
 .conceptItem, .offersItemContainer{
     width: 33.333%;
-    padding: 0 10px;
+    padding: 0 20px;
+}
+
+.map{
+    max-width: 100%;
+    display: flex;
+    background: $orange;
+
+    .sectionTitle{
+        color: #ffffff;
+        margin: 0;
+    }
+}
+
+.user{
+    background: #931621;
+}
+
+.mapContainer, .user{
+    width: 50%;
+    padding: 10em 3em;
+}
+
+.offers{
+    background: #fff !important;
 }
 
 .offersItem{
+    text-align: center;
     padding : 3em;
     background: #fff;
-    box-shadow: 20px 50px 70px rgba(0, 0, 0, 0.075);
+    @include border-radius(5px);
+    box-shadow: 0 4px 13px 0 rgba(31,53,70,.08),0 2px 4px 0 rgba(31,53,70,.08);
+}
+
+.offersTitle{
+    font-weight: 400;
+    font-size: 36px;
+}
+
+.offersPrice{
+    font-size: 26px;
+    color: $orange;
+    font-weight: 600;
+    margin: 1em 0;
+
+    span{
+        margin: 0.5em 0;
+        display: block;
+        font-size: 16px;
+        color: $noir;
+        text-transform: uppercase;
+    }
 }
 
 .miniTitle{
     font-weight: 600;
+    font-size: 18px;
     text-align: center;
     margin: 1em 0;
 }
 
 .conceptText{
     text-align: center;
+    color: lighten($noir,30%);
 }
 
-.mapContainer{
+.mapContainer, .user{
     display : flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -168,5 +257,15 @@ body{
     color: #ffffff !important;
     text-decoration: none;
     @include border-radius(50px);
+    box-shadow: 0 4px 13px 0 rgba(31,53,70,.08),0 2px 4px 0 rgba(31,53,70,.08);
+    @include transition(0.26s ease);
+    position: relative;
+    top: 4px;
+
+    &:hover{
+        top: 0;
+        text-decoration: none !important;
+        background: lighten($orange,10%);
+    }
 }
 
