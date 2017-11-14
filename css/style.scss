@@ -17,6 +17,17 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+
+.logoContainer{
+    max-width: 15%;
+    overflow: hidden;
+}
+
+.logo{
+    max-width: 100%;
+    height: 70px;
+}
+
 .icon {
     display: inline-block;
     width: 1em;
@@ -40,14 +51,30 @@ body{
 }
 
 .concept, .offers{
-    padding: 10em 0;
+    padding: 5em 0;
 }
 
 .header{
-    background: #f2efea url(../img/header.jpg) center center no-repeat;
+    background: #f2efea url(../img/header3.jpg) center center no-repeat;
     background-size: cover;
     height: 100vh;
     position: relative;
+    overflow: hidden;
+
+    // &:before{
+    //     content: "";
+    //     background: rgba(255,255,255,1);
+    //     position: absolute;
+    //     height: 100%;right: -30%;left: 60%;
+    //     z-index: 1;
+    //     transform: skew(45deg);
+    // }
+}
+
+.headerVideo{
+    width: 100%;
+    position: absolute;
+    top: 0;bottom: 0;left: 0;right: 0;
 }
 
 .overlay{
@@ -62,6 +89,33 @@ body{
     width: 100%;
     // background: rgba(0,0,0,0.3);
     // @include box-shadow( 0 0 13px rgba(0,0,0,0.075));
+
+    &.fixed{
+        background: $noir;
+        position: fixed;
+        top: 0;
+        left: 0;right: 0;
+        font-size: 14px;
+
+        &.--open{
+            animation: navbar 0.26s ease forwards;
+        }
+
+        &.--close{
+            animation: navbarReverse 0.26s ease forwards;
+        }
+        
+
+        .navBarContainer{
+            padding: 0;
+        }
+
+        .button{
+            padding: 0.5em 1em;
+        }
+
+    }
+
 }
 
 .navBarContainer{
@@ -92,13 +146,12 @@ body{
 .edito{
     width: 100%;
     text-align: center;
-    margin-top: 10%;
     z-index: 2;
 
     p{
         font-size: 30px;
-        color: #ffffff;
-        text-shadow: 0px 0px 10px rgba(0, 0, 0, 1) !important;
+        color: #fff;
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5) !important;
         
     }
     .orangeText{
@@ -133,7 +186,7 @@ body{
     height: 50px;
     margin: 2em auto;
     @include border-radius(50px); 
-    box-shadow: 20px 30px 70px rgba(0, 0, 0, 1);
+    box-shadow: 20px 30px 70px rgba(0, 0, 0, 0.5);
     
 }
 
@@ -176,12 +229,13 @@ body{
 .conceptItem, .offersItemContainer{
     width: 33.333%;
     padding: 0 20px;
+    text-align: center;
 }
 
 .map{
     max-width: 100%;
-    display: flex;
-    background: $orange;
+    padding: 10em 3em;
+    background: $noir;
 
     .sectionTitle{
         color: #ffffff;
@@ -193,9 +247,9 @@ body{
     background: #931621;
 }
 
-.mapContainer, .user{
-    width: 50%;
-    padding: 10em 3em;
+.conceptImage{
+    max-width: 100%;
+    height: 100px;
 }
 
 .offers{
@@ -203,6 +257,8 @@ body{
 }
 
 .offersItem{
+    overflow: hidden;
+    position: relative;
     text-align: center;
     padding : 3em;
     background: #fff;
@@ -210,9 +266,44 @@ body{
     box-shadow: 0 4px 13px 0 rgba(31,53,70,.08),0 2px 4px 0 rgba(31,53,70,.08);
 }
 
+.offersItemContainer{
+
+    &:nth-child(1) .offersItem::before{
+        content: "";
+        background: url(../img/icons/Newbie.png) right center no-repeat;
+        background-size: contain;
+        position: absolute;
+        right: 0;bottom: -20%;top: 30%;left: 0;
+        z-index: 1;
+        opacity: 0.075;
+    }
+
+    &:nth-child(2) .offersItem::before{
+        content: "";
+        background: url(../img/icons/Casual.png) right center no-repeat;
+        background-size: contain;
+        position: absolute;
+        right: 0;bottom: -20%;top: 30%;left: 0;
+        z-index: 1;
+        opacity: 0.075;
+    }
+
+    &:nth-child(3) .offersItem::before{
+        content: "";
+        background: url(../img/icons/Pro.png) right center no-repeat;
+        background-size: contain;
+        position: absolute;
+        right: 0;bottom: -20%;top: 30%;left: 0;
+        z-index: 1;
+        opacity: 0.075;
+    }
+}
+
 .offersTitle{
     font-weight: 400;
     font-size: 36px;
+    z-index: 2;
+    position: relative;
 }
 
 .offersPrice{
@@ -220,6 +311,8 @@ body{
     color: $orange;
     font-weight: 600;
     margin: 1em 0;
+    z-index: 2;
+    position: relative;
 
     span{
         margin: 0.5em 0;
@@ -258,14 +351,37 @@ body{
     text-decoration: none;
     @include border-radius(50px);
     box-shadow: 0 4px 13px 0 rgba(31,53,70,.08),0 2px 4px 0 rgba(31,53,70,.08);
-    @include transition(0.26s ease);
-    position: relative;
-    top: 4px;
+    @include transition(background 0.26s ease);
+    z-index: 3;
 
     &:hover{
-        top: 0;
         text-decoration: none !important;
         background: lighten($orange,10%);
     }
 }
 
+.link{
+    color: $orange;
+    text-decoration: none;
+}
+
+@keyframes navbar{
+    0%{
+        top: -10%;
+    }
+    100%{
+        top: 0;
+    }
+}
+
+@keyframes navbarReverse{
+    0%{
+        top: 0;
+    }
+    50%{
+        top: -10%;
+    }
+    100%{
+        position: static;
+    }
+}
