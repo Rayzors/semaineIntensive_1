@@ -29,5 +29,5 @@ window.addEventListener('scroll', function(){
     
     stickynav();
     spyshow();
-   
+    
 });

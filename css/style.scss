@@ -32,7 +32,7 @@ $noir : #252626;
 }
 
 body{
-    background: #fffcf9;
+    background: #fff;
     color: $noir;
     line-height: 1.4;
     font-family: 'Gotham', sans-serif;
@@ -98,8 +98,12 @@ body{
     padding: 8em 0;
 }
 
+.testimonials{
+    padding-top: 0;
+}
+
 .header{
-    background: #f2efea;
+    background: #fff;
     height: 100vh;
     position: relative;
     overflow: hidden;
@@ -466,17 +470,22 @@ body{
     width: 33.333%;
     min-height: 250px;
     text-align: center;
+    border-right: 1px solid #eee;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
 
-    // .modelsImg{
-    //     border-right: 1px solid #eee;
-    //     border-top: 1px solid #eee;
-    //     border-bottom: 1px solid #eee;
-    // }
+    .modelsImg{
+        border-bottom: 1px solid #eee;
+    }
     
 }
 
-.modelsLongboard:last-child .modelsImg{
+.modelsLongboard:last-child{
     border-right: none; 
+}
+
+.modelsInfo ul{
+    margin-bottom: 2em;
 }
 
 .modelsImg{
@@ -514,7 +523,7 @@ body{
 }
 
 .testimonialsText{
-    text-shadow: 0 19px 38px rgba(0,0,0,0.075), 0 15px 12px rgba(0,0,0,0.075);            
+    // text-shadow: 0 19px 38px rgba(0,0,0,0.075), 0 15px 12px rgba(0,0,0,0.075);            
     position: relative;
     z-index: 2;
 }
@@ -525,7 +534,7 @@ body{
     margin: 1em 0;
     position: relative;
     z-index: 3;
-    text-shadow: 0 19px 38px rgba(0,0,0,0.075), 0 15px 12px rgba(0,0,0,0.075);            
+    // text-shadow: 0 19px 38px rgba(0,0,0,0.075), 0 15px 12px rgba(0,0,0,0.075);            
 }
 
 .mobile{
@@ -548,9 +557,81 @@ body{
 .mobileImage{
     max-width: 100%;
     position: relative;
-    bottom:-5%;
-    box-shadow: 0 19px 38px rgba(0,0,0,0.075), 0 15px 12px rgba(0,0,0,0.075);            
+    bottom:-5%;    
+}
+
+.sponsors{
+    background: #f7f7f7;
+}
+
+.sponsorsContainer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+.sponsorsImageContainer{
+    height: 70px;
+    max-width: 100px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.sponsorsImage{
+    max-width: 100%;
+    max-height:100%;
+}
+
+
+.footer{
+    background: $noir;
+    color: #fff;
+    padding-top: 5em;
+    font-size: 13px;
+
+    a{
+        color: $orange;
+        text-decoration: none;
+    }
+
+    .miniTitle{
+        text-align: left;
+        margin-bottom: 1em;
+    }
+}
+
+.footernav{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.apropos{
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    margin-bottom: 5em;
     
+}
+
+.footerContainer{
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap ;
+}
+
+.footerBlock{
+    width: 33.3333%;
+}
+
+.bottomFooterContainer{
+    text-align: center;
+    padding-top: 3em;
+    padding-bottom: 1em;
 }
 
 @keyframes navbar{
