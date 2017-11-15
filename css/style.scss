@@ -57,7 +57,7 @@ body{
 }
 
 .container{
-    max-width:960px;
+    max-width:1200px;
     margin: 0 auto;
     padding: 0 5px;
     z-index: 5;
@@ -431,18 +431,23 @@ body{
     width: 33.333%;
     min-height: 250px;
     text-align: center;
-    border-right: 1px solid #eee;
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
+
+    .modelsImg{
+        border-right: 1px solid #eee;
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+    }
+    
 }
 
-.modelsLongboard:last-child{
+.modelsLongboard:last-child .modelsImg{
     border-right: none; 
 }
 
 .modelsImg{
-    object-fit: cover;
+    object-fit: contain;
     max-width: 100%;
+    height: auto;
 }
 
 @keyframes navbar{

@@ -72,7 +72,7 @@ body {
   animation: showing 0.26s ease forwards; }
 
 .container {
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 5px;
   z-index: 5; }
@@ -328,17 +328,19 @@ body {
 .modelsLongboard {
   width: 33.333%;
   min-height: 250px;
-  text-align: center;
+  text-align: center; }
+.modelsLongboard .modelsImg {
   border-right: 1px solid #eee;
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee; }
 
-.modelsLongboard:last-child {
+.modelsLongboard:last-child .modelsImg {
   border-right: none; }
 
 .modelsImg {
-  object-fit: cover;
-  max-width: 100%; }
+  object-fit: contain;
+  max-width: 100%;
+  height: auto; }
 
 @keyframes navbar {
   0% {
