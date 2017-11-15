@@ -32,7 +32,7 @@ $noir : #252626;
 }
 
 body{
-    background: #fff;
+    background: #fffcf9;
     color: $noir;
     line-height: 1.4;
     font-family: 'Gotham', sans-serif;
@@ -94,7 +94,7 @@ body{
     z-index: 5;
 }
 
-.concept, .offers, .testimonials{
+.concept, .offers, .testimonials, .models{
     padding: 8em 0;
 }
 
@@ -467,11 +467,11 @@ body{
     min-height: 250px;
     text-align: center;
 
-    .modelsImg{
-        border-right: 1px solid #eee;
-        border-top: 1px solid #eee;
-        border-bottom: 1px solid #eee;
-    }
+    // .modelsImg{
+    //     border-right: 1px solid #eee;
+    //     border-top: 1px solid #eee;
+    //     border-bottom: 1px solid #eee;
+    // }
     
 }
 
@@ -521,10 +521,36 @@ body{
 
 .nameUser{
     font-weight: 600;
-    font-size: 20px;
+    font-size:32px;
     margin: 1em 0;
     position: relative;
     z-index: 3;
+    text-shadow: 0 19px 38px rgba(0,0,0,0.075), 0 15px 12px rgba(0,0,0,0.075);            
+}
+
+.mobile{
+    background: #f9f9f9;
+    overflow: hidden;
+    padding-top: 5em;
+}
+
+.mobileContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.mobileImageContainer{
+    max-width: 50%;
+}
+
+.mobileImage{
+    max-width: 100%;
+    position: relative;
+    bottom:-5%;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.075), 0 15px 12px rgba(0,0,0,0.075);            
+    
 }
 
 @keyframes navbar{

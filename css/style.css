@@ -50,7 +50,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   box-sizing: border-box; }
 
 body {
-  background: #fff;
+  background: #fffcf9;
   color: #252626;
   line-height: 1.4;
   font-family: 'Gotham', sans-serif; }
@@ -98,7 +98,7 @@ body {
   padding: 0 5px;
   z-index: 5; }
 
-.concept, .offers, .testimonials {
+.concept, .offers, .testimonials, .models {
   padding: 8em 0; }
 
 .header {
@@ -354,10 +354,6 @@ body {
   width: 33.333%;
   min-height: 250px;
   text-align: center; }
-.modelsLongboard .modelsImg {
-  border-right: 1px solid #eee;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee; }
 
 .modelsLongboard:last-child .modelsImg {
   border-right: none; }
@@ -400,10 +396,31 @@ body {
 
 .nameUser {
   font-weight: 600;
-  font-size: 20px;
+  font-size: 32px;
   margin: 1em 0;
   position: relative;
-  z-index: 3; }
+  z-index: 3;
+  text-shadow: 0 19px 38px rgba(0, 0, 0, 0.075), 0 15px 12px rgba(0, 0, 0, 0.075); }
+
+.mobile {
+  background: #f9f9f9;
+  overflow: hidden;
+  padding-top: 5em; }
+
+.mobileContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.mobileImageContainer {
+  max-width: 50%; }
+
+.mobileImage {
+  max-width: 100%;
+  position: relative;
+  bottom: -5%;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.075), 0 15px 12px rgba(0, 0, 0, 0.075); }
 
 @keyframes navbar {
   0% {
