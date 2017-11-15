@@ -19,7 +19,8 @@
         </defs>
     </svg>
     <header class="header">
-        <video src="video/video.mp4" class="headerVideo" autoplay="true" preload="auto" loop muted></video>
+        
+        <video src="video/video.mp4" class="headerVideo" autoplay="true" loop muted></video>
         <div class="overlay"></div>
         <div class="navbar">
             <div class="container navBarContainer">
@@ -29,11 +30,11 @@
                 
                 <nav>
                     <ul class="inline-list">
-                        <li><a href="#">Nos bornes</a></li>
-                        <li><a href="#">Nos offres</a></li>
-                        <li><a href="#">Nos modèles</a></li>
-                        <li><a href="#">Se connecter</a></li>
-                        <li><a href="#" class="button">Je m'inscris</a></li>
+                        <li><a href="#" class="menulink">Nos bornes</a></li>
+                        <li><a href="#" class="menulink">Nos offres</a></li>
+                        <li><a href="#" class="menulink">Nos modèles</a></li>
+                        <li><a href="#" class="menulink">Se connecter</a></li>
+                        <li><a href="#" class="button menulink">Je m'inscris</a></li>
                     </ul>
                 </nav>
             </div>
@@ -51,20 +52,20 @@
     <section class="concept">
         <div class="container">
 
-            <!-- <h2 class="sectionTitle">Le concept</h2> -->
+            <h2 class="sectionTitle toShow">Déjà <span class="orangeText">plus de 5000 Grabbers</span> nous font confiance.</h2>
 
             <div class="conceptContainer">
-                <div class="conceptItem">
+                <div class="conceptItem toShow">
                     <img src="img/icons/Smartphone.png" class="conceptImage">
                     <h3 class="miniTitle">100% Mobile</h3>
                     <p class="conceptText">Réservez votre longboard depuis notre application et go grab it</p>
                 </div>
-                <div class="conceptItem">
+                <div class="conceptItem toShow">
                     <img src="img/icons/Pig.png" class="conceptImage">
                     <h3 class="miniTitle">100% Économique</h3>
                     <p class="conceptText">Éclate toi avec ta longboard Evolve pour seulement x€ par jour</p>
                 </div>
-                <div class="conceptItem">
+                <div class="conceptItem toShow">
                     <img src="img/icons/Feuilles.png" class="conceptImage">
                     <h3 class="miniTitle">100% Écologique</h3>
                     <p class="conceptText">Choisis nos longboards électriques pour te déplacer sur Paris sans polluer.</p>
@@ -75,32 +76,34 @@
     </section>
 
     <section class="map">
-             <div class="mapContainer">
-                <h2 class="sectionTitle">12 bornes déjà disponibles dans Paris</h2>
-            </div>
-        </section>
+        <div class="overlay"></div>
+            
+        <div class="mapContainer">
+            <h2 class="sectionTitle toShow">12 bornes déjà disponibles dans Paris</h2>
+        </div>
+    </section>
 
     <section class="offers">
         <div class="container">
 
-            <!-- <h2 class="sectionTitle">Nos abonnements</h2> -->
+            <h2 class="sectionTitle toShow">Les abonnements que nous proposons</h2>
 
             <div class="offersContainer">
-                <div class="offersItemContainer">
+                <div class="offersItemContainer toShow">
                     <div class="offersItem">
                         <h3 class="miniTitle">Ponctuel</h3>
                         <p class="offersPrice">15€/heure</p>
                         <a href="#" class="button">Souscrire</a>
                     </div>
                 </div>
-                <div class="offersItemContainer">
+                <div class="offersItemContainer toShow">
                     <div class="offersItem">
                         <h3 class="miniTitle">Mensuel</h3>
                         <p class="offersPrice">€5/mois</p>
                         <a href="#" class="button">Souscrire</a>
                     </div>
                 </div>
-                <div class="offersItemContainer">
+                <div class="offersItemContainer toShow">
                     <div class="offersItem">
                         <h3 class="miniTitle">Annuel</h3>
                         <p class="offersPrice">€50/Année</p>
@@ -113,29 +116,33 @@
     </section>
 
     <section class="models">
-        <div class="container">
-             <div class="container modelsContainers">
-                <div class="modelsLongboard">
-                    <p>Modèle Carbon</p>
+        <h2 class="sectionTitle toShow">Nos différents modèles !</h2>
+
+        <div class="modelsContainer">
+            <div class="modelsLongboard">
+                <img src="img/models/GTCarbonStreet.jpg" alt="" class="modelsImg">
+                <div class="modelsInfo">
+                    <h3 class="miniTitle">GT Carbon Street</h3>
                 </div>
-                <div class="modelsLongboard">
-                    <p>Modèle GT</p>
+            </div>
+            <div class="modelsLongboard">
+                <img src="img/models/GTCarbonSeries.jpg" alt="" class="modelsImg">
+                <div class="modelsInfo">
+                    <h3 class="miniTitle">GT Carbon Series</h3>
                 </div>
-                <div class="modelsLongboard">
-                    <p>Modèle Formule 1</p>
+            </div>
+            <div class="modelsLongboard">
+                <img src="img/models/GTCarbonSeries.jpg" alt="" class="modelsImg">                    
+                <div class="modelsInfo">
+                    <h3 class="miniTitle">GT Carbon Series</h3>
                 </div>
             </div>
         </div>
-    </section>  
-    <section class="map">
-        <div class="container mapContainer">
-            <h1 class="mapTitle">12 bornes déjà disponibles dans Paris</h1>
-        </div>
-    </section>
+    </section> 
 
     <section class="testimonials">
         <div class="container">
-            <div class="container testimonialsContainer">
+            <div class="testimonialsContainer">
                 <h1 class="testimonialsTitle">Ils parlent de nous!</h1>
                 <img src="">
                  <h3 class="nameUser">David Laroche</h3>
