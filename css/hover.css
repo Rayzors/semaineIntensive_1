@@ -31,3 +31,21 @@
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
+
+.dividerBg {
+  background: #FFFDFC;
+}
+.containerDivider {
+  display: flex;
+  justify-content: space-between;
+  width: 15%;
+  margin: 0 auto;}
+
+.dividerSquares {
+  height: 7px;
+  width: 7px;
+  background: #FF6A00;}
+
+.testimonialGrabber {
+  font-weight: 600;
+}
