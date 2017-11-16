@@ -32,6 +32,13 @@
   transform: scaleX(1);
 }
 
+.fleche {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 19px);
+  padding-bottom: 1em;
+}
+
 .dividerBg {
   background: #FFFDFC;
 }
