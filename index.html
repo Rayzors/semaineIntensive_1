@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,13 +11,14 @@
     <link rel="stylesheet" href="css/hover.css">
     <title>Grabber - Le 1er site de location de longboard</title>
 </head>
+
 <body>
     <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink">
         <defs>
             <symbol id="icon-search" viewBox="0 0 32 32">
-                    <title>search</title>
-                    <path d="M19.427 20.427c-1.39 0.99-3.090 1.573-4.927 1.573-4.694 0-8.5-3.806-8.5-8.5s3.806-8.5 8.5-8.5c4.694 0 8.5 3.806 8.5 8.5 0 1.837-0.583 3.537-1.573 4.927l5.585 5.585c0.55 0.55 0.546 1.431-0 1.976l-0.023 0.023c-0.544 0.544-1.431 0.546-1.976 0l-5.585-5.585zM14.5 20c3.59 0 6.5-2.91 6.5-6.5s-2.91-6.5-6.5-6.5c-3.59 0-6.5 2.91-6.5 6.5s2.91 6.5 6.5 6.5v0z"></path>
+                <title>search</title>
+                <path d="M19.427 20.427c-1.39 0.99-3.090 1.573-4.927 1.573-4.694 0-8.5-3.806-8.5-8.5s3.806-8.5 8.5-8.5c4.694 0 8.5 3.806 8.5 8.5 0 1.837-0.583 3.537-1.573 4.927l5.585 5.585c0.55 0.55 0.546 1.431-0 1.976l-0.023 0.023c-0.544 0.544-1.431 0.546-1.976 0l-5.585-5.585zM14.5 20c3.59 0 6.5-2.91 6.5-6.5s-2.91-6.5-6.5-6.5c-3.59 0-6.5 2.91-6.5 6.5s2.91 6.5 6.5 6.5v0z"></path>
             </symbol>
             <symbol id="icon-quotes-left" viewBox="0 0 32 32">
                 <title>quotes-left</title>
@@ -36,11 +38,21 @@
 
                 <nav>
                     <ul class="inline-list">
-                        <li><a href="#" class="menulink">Les bornes</a></li>
-                        <li><a href="#" class="menulink">Les offres</a></li>
-                        <li><a href="#" class="menulink">Les modèles</a></li>
-                        <li><a href="#" class="menulink">Mon espace</a></li>
-                        <li><a href="#" class="button menulink">Je m'inscris</a></li>
+                        <li>
+                            <a href="#" class="menulink">Les bornes</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menulink">Les offres</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menulink">Les modèles</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menulink">Mon espace</a>
+                        </li>
+                        <li>
+                            <a href="#" class="button menulink">Je m'inscris</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -48,9 +60,16 @@
 
         <div class="container searchContainer">
             <div class="edito">
-                <p>Le premier système de <span class="orangeText">location de longboards</span><br />en libre-service à Paris.</p>
+                <p>Le premier système de
+                    <span class="orangeText">location de longboards</span>
+                    <br />en libre-service à Paris.</p>
                 <div class="searchbarItemsContainer">
-                    <input type="text" class="searchbar" placeholder="Trouvez une borne près de chez vous."><button type="submit" class="searchButton"><svg class="icon icon-search"><use xlink:href="#icon-search"></use></svg></button>
+                    <input type="text" class="searchbar" placeholder="Trouvez une borne près de chez vous.">
+                    <button type="submit" class="searchButton">
+                        <svg class="icon icon-search">
+                            <use xlink:href="#icon-search"></use>
+                        </svg>
+                    </button>
                 </div>
             </div>
         </div>
@@ -58,54 +77,74 @@
     <section class="concept">
         <div class="container">
 
-            <h2 class="sectionTitle toShow">Un <span class="boldText">service</span> qui pense à tout<span class="boldDot"> .</span></h2>
+            <h2 class="sectionTitle toShow">Un
+                <span class="boldText">service</span> qui pense à tout
+                <span class="boldDot"> .</span>
+            </h2>
 
             <div class="conceptContainer">
                 <div class="conceptItem inColumn toShow">
                     <img src="img/icons/mobile.png" class="conceptImage">
                     <h3 class="miniTitle">100% Mobile</h3>
-                    <p class="conceptText">Réservez, retirez et ramenez<br/>votre longboard grâce à<br/>notre application mobile.</p>
+                    <p class="conceptText">Réservez, retirez et ramenez
+                        <br/>votre longboard grâce à
+                        <br/>notre application mobile.</p>
                 </div>
                 <div class="conceptItem inColumn toShow">
                     <img src="img/icons/earth.png" class="conceptImage">
                     <h3 class="miniTitle">100% Green</h3>
-                    <p class="conceptText">Déplacez-vous à<br/>Paris sans aucun impact<br/>sur l'environnement.</p>
+                    <p class="conceptText">Déplacez-vous à
+                        <br/>Paris sans aucun impact
+                        <br/>sur l'environnement.</p>
                 </div>
                 <div class="conceptItem inColumn toShow">
                     <img src="img/icons/money.png" class="conceptImage">
                     <h3 class="miniTitle">100% Économique</h3>
-                    <p class="conceptText">Utilisez les derniers<br/>modèles Evolve à tout<br/>petit prix.</p>
+                    <p class="conceptText">Utilisez les derniers
+                        <br/>modèles Evolve à tout
+                        <br/>petit prix.</p>
                 </div>
             </div>
-       </div>
+        </div>
     </section>
 
     <section class="map">
         <div class="overlay"></div>
 
         <div class="mapContainer">
-            <h2 class="sectionTitle toShow">Déjà<span class="boldText"> plus de 50 bornes</span><br/>disponibles à Paris<span class="boldDot"> .</span></h2>
+            <h2 class="sectionTitle toShow">Déjà
+                <span class="boldText"> plus de 50 bornes</span>
+                <br/>disponibles à Paris
+                <span class="boldDot"> .</span>
+            </h2>
         </div>
     </section>
 
     <section class="offers">
         <div class="container">
 
-            <h2 class="sectionTitle toShow">Des offres <span class="boldText">adaptées</span> à tous<span class="boldDot"> .</span></h2>
+            <h2 class="sectionTitle toShow">Des offres
+                <span class="boldText">adaptées</span> à tous
+                <span class="boldDot"> .</span>
+            </h2>
 
             <div class="offersContainer">
                 <div class="offersItemContainer inColumn toShow">
                     <div class="offersItem">
                         <h3 class="miniTitle">Goofy</h3>
                         <p class="resume">Louez la planche de votre choix.</p>
-                        <p class="offersPrice">À partir de : <br /><span class="bigPrice">1€</span>/heure</p>
+                        <p class="offersPrice">À partir de :
+                            <br />
+                            <span class="bigPrice">1€</span>/heure</p>
                     </div>
                 </div>
                 <div class="offersItemContainer inColumn toShow">
                     <div class="offersItem">
                         <h3 class="miniTitle">Casual</h3>
                         <p class="resume">Choisissez votre modèle pour une utilisation illimitée pendant un mois.</p>
-                        <p class="offersPrice">À partir de : <br /><span class="bigPrice">9€</span>/mois</p>
+                        <p class="offersPrice">À partir de :
+                            <br />
+                            <span class="bigPrice">9€</span>/mois</p>
 
                     </div>
                 </div>
@@ -113,25 +152,30 @@
                     <div class="offersItem">
                         <h3 class="miniTitle">Expert</h3>
                         <p class="resume">Profitez de tous les modèles pour un usage illimité pendant un an.</p>
-                        <p class="offersPrice">À partir de : <br /><span class="bigPrice">49€</span>/an</p>
+                        <p class="offersPrice">À partir de :
+                            <br />
+                            <span class="bigPrice">49€</span>/an</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <section class="dividerBg">
-      <div class="containerDivider">
-        <div class="dividerSquares"></div>
-        <div class="dividerSquares"></div>
-        <div class="dividerSquares"></div>
-        <div class="dividerSquares"></div>
-        <div class="dividerSquares"></div>
-      </div>
+        <div class="containerDivider">
+            <div class="dividerSquares"></div>
+            <div class="dividerSquares"></div>
+            <div class="dividerSquares"></div>
+            <div class="dividerSquares"></div>
+            <div class="dividerSquares"></div>
+        </div>
     </section>
     <section class="models">
 
         <div class="container">
-            <h2 class="sectionTitle toShow">Et des planches <span class="boldText">adaptées</span> à tous les usages<span class="boldDot"> .</span></h2>
+            <h2 class="sectionTitle toShow">Et des planches
+                <span class="boldText">adaptées</span> à tous les usages
+                <span class="boldDot"> .</span>
+            </h2>
 
             <div class="modelsContainer">
                 <div class="modelsLongboard inColumn toShow">
@@ -163,78 +207,94 @@
     </section>
 
     <section class="mobile">
-        <h2 class="sectionTitle toShow">L'application <span class="boldText">mobile</span><span class="boldDot"> .</span></h2>
+        <h2 class="sectionTitle toShow">L'application
+            <span class="boldText">mobile</span>
+            <span class="boldDot"> .</span>
+        </h2>
 
-            <div class="container">
-                <div class="mobileContainer">
-                    <div class="storeButtonContainer">
-                        <a href="#" class="storeButtonLink"><img src="img/applestore.png" alt="lien vers l'apple store" class="storeButton"></a>
-                        <a href="#" class="storeButtonLink"><img src="img/playstore.png" alt="lien vers le play store" class="storeButton"></a>
-                    </div>
-                    <div class="mobileImageContainer toShow">
-                        <img src="img/iphone2.png" alt="" class="mobileImage">
-                        <img src="img/iphone1.png" alt="" class="mobileImage">
-                        <img src="img/iphone3.png" alt="" class="mobileImage">
-                    </div>
+        <div class="container">
+            <div class="mobileContainer">
+                <div class="storeButtonContainer">
+                    <a href="#" class="storeButtonLink">
+                        <img src="img/applestore.png" alt="lien vers l'apple store" class="storeButton">
+                    </a>
+                    <a href="#" class="storeButtonLink">
+                        <img src="img/playstore.png" alt="lien vers le play store" class="storeButton">
+                    </a>
+                </div>
+                <div class="mobileImageContainer toShow">
+                    <img src="img/iphone2.png" alt="" class="mobileImage">
+                    <img src="img/iphone1.png" alt="" class="mobileImage">
+                    <img src="img/iphone3.png" alt="" class="mobileImage">
                 </div>
             </div>
+        </div>
     </section>
 
     <section class="testimonials">
-      <h2 class="sectionTitle toShow">Ce que nos <span class="boldText">utilisateurs</span> disent de nous<span class="boldDot"> .</span></h2>
-        <div class="container">
-            <div class="testimonialsContainer toShow">
-                <div class="testimonialsItem">
-                  <p class="testimonialsText">
-                      <span class="testimonialGrabber">Grabber</span> est un super</br>service ! C'est l'alternative</br>dont j'avais besoin !</p>
-                    <div class="testimonialInfo">
-                      <div class="testimonialsImgContainer">
-                          <img src="img/user1.jpg" class="testimonialsImg">
-                      </div>
+        <h2 class="sectionTitle toShow">Ce que nos
+            <span class="boldText">utilisateurs</span> disent de nous
+            <span class="boldDot"> .</span>
+        </h2>
+        <div class="testimonialsContainer toShow">
+            <div class="testimonialsItem">
+                <p class="testimonialsText">
+                    <span class="testimonialGrabber">Grabber</span> est un super service ! C'est l'alternative dont j'avais besoin !</p>
+                <div class="testimonialInfo">
+                    <div class="testimonialsImgContainer">
+                        <img src="img/user1.jpg" class="testimonialsImg">
+                    </div>
+                    <div class="infoText">
                         <p class="nameUser">Guillaume,</p>
                         <p class="ageUser">31 ans</p>
                     </div>
                 </div>
-                <div class="testimonialsItem">
-                  <p class="testimonialsText">
-                    Maintenant je vais au travail</br>tous les jours en longboard</br>et j’adore ça !</p>
-                    <div class="testimonialInfo">
-                      <div class="testimonialsImgContainer">
-                          <img src="img/user2.jpg" class="testimonialsImg">
-                      </div>
+            </div>
+            <div class="testimonialsItem">
+                <p class="testimonialsText">
+                    Maintenant je vais au travail tous les jours en longboard et j’adore ça !</p>
+                <div class="testimonialInfo">
+                    <div class="testimonialsImgContainer">
+                        <img src="img/user2.jpg" class="testimonialsImg">
+                    </div>
+                    <div class="infoText">
                         <p class="nameUser">Jeanne,</p>
                         <p class="ageUser">23 ans</p>
                     </div>
                 </div>
-                <div class="testimonialsItem">
-                  <p class="testimonialsText">
-                    L’application est géniale,</br>intuitive et elle me permet</br>d’utiliser Grabber facilement.</p>
-                    <div class="testimonialInfo">
-                      <div class="testimonialsImgContainer">
-                          <img src="img/user3.jpg" class="testimonialsImg">
-                      </div>
+            </div>
+            <div class="testimonialsItem">
+                <p class="testimonialsText">
+                    L’application est géniale, intuitive et elle me permet d’utiliser Grabber facilement.</p>
+                <div class="testimonialInfo">
+                    <div class="testimonialsImgContainer">
+                        <img src="img/user3.jpg" class="testimonialsImg">
+                    </div>
+                    <div class="infoText">
                         <p class="nameUser">Diego,</p>
                         <p class="ageUser">28 ans</p>
                     </div>
                 </div>
-                <div class="testimonialsItem">
-                  <p class="testimonialsText">
-                    Avoir accès à des planches</br>dernier cri à un petit coût,</br>c’est géant ! </p>
-                    <div class="testimonialInfo">
-                      <div class="testimonialsImgContainer">
-                          <img src="img/user4.jpg" class="testimonialsImg">
-                      </div>
+            </div>
+            <div class="testimonialsItem">
+                <p class="testimonialsText">
+                    Avoir accès à des planches dernier cri à un petit coût, c’est géant ! </p>
+                <div class="testimonialInfo">
+                    <div class="testimonialsImgContainer">
+                        <img src="img/user4.jpg" class="testimonialsImg">
+                    </div>
+                    <div class="infoText">
                         <p class="nameUser">Anna,</p>
                         <p class="ageUser">19 ans</p>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
     <section class="sponsors">
-      <h2 class="sectionTitle toShow">En <span class="boldText">partenariat</span> avec :</h2>
+        <h2 class="sectionTitle toShow">En
+            <span class="boldText">partenariat</span> avec :</h2>
         <div class="container">
             <div class="sponsorsContainer">
                 <div class="sponsorsImageContainer">
@@ -244,7 +304,7 @@
                     <img src="img/mairie_de_paris.png" alt="" class="sponsorsImage">
                 </div>
                 <div class="sponsorsImageContainer">
-                    <img src="img/evolve.png" alt=""class="sponsorsImage">
+                    <img src="img/evolve.png" alt="" class="sponsorsImage">
                 </div>
             </div>
         </div>
@@ -258,38 +318,57 @@
             <div class="footerContainer">
                 <div class="apropos">
                     <h4 class="miniTitle">À propos</h4>
-                    <p>Grabber est un système de location de longboards électriques.<br/>
-                      Ce service fonctionne avec l’application Grab’it qui vous<br/>
-                      permet de louer votre planche depuis l’une de nos bornes<br/>
-                      en libre-service.</p>
+                    <p>Grabber est un système de location de longboards électriques.
+                        <br/> Ce service fonctionne avec l’application Grab’it qui vous
+                        <br/> permet de louer votre planche depuis l’une de nos bornes
+                        <br/> en libre-service.</p>
                 </div>
 
                 <div class="footernav">
                     <ul class="footerBlock">
-                        <li><h4 class="miniTitle">Besoin d'aide ?</h4></li>
-                        <li><a href="#">Comment ça marche?</a></li>
-                        <li><a href="#">Demande de location</a></li>
-                        <li><a href="#">Choisir son modèle</a></li>
-                        <li><a href="#">Assistance</a></li>
-                        <li><a href="#">FAQ</a></li>
+                        <li>
+                            <h4 class="miniTitle">Besoin d'aide ?</h4>
+                        </li>
+                        <li>
+                            <a href="#">Comment ça marche?</a>
+                        </li>
+                        <li>
+                            <a href="#">Demande de location</a>
+                        </li>
+                        <li>
+                            <a href="#">Choisir son modèle</a>
+                        </li>
+                        <li>
+                            <a href="#">Assistance</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQ</a>
+                        </li>
                     </ul>
                     <ul class="footerBlock">
-                        <li><h4 class="miniTitle">Contact</h4></li>
+                        <li>
+                            <h4 class="miniTitle">Contact</h4>
+                        </li>
                         <li id="phone" class="phoneIcon">09 80 69 38 60</li>
-                        <li id="mail" class="mailIcon"><a href="mailto:contact@grabber.com">contact@grabber.com</a></li>
+                        <li id="mail" class="mailIcon">
+                            <a href="mailto:contact@grabber.com">contact@grabber.com</a>
+                        </li>
                         <li id="adress" class="adressIcon">81 rue Nationale, 75003 Paris</li>
                     </ul>
                 </div>
             </div>
             <div class="bottomFooterContainer">
                 <ul class="grabitCopyright">
-                    <li class="copyright">©2017 Grabber LTD, tous droits réservés - <a class="mentionsLegales"href="#">Mentions légales</a></li>
+                    <li class="copyright">©2017 Grabber LTD, tous droits réservés -
+                        <a class="mentionsLegales" href="#">Mentions légales</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </footer>
 
 
-    <script src="js/app.js" ></script>
+    <script src="js/app.js"></script>
 </body>
+
 </html>

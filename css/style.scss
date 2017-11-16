@@ -72,6 +72,8 @@ body{
 
 .testimonials{
     background: $orange_clair;
+    overflow: hidden;
+    
 }
 
 .orangeText{
@@ -422,52 +424,73 @@ body{
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    width: 100%;
-
+    width: 200%;
 }
 
 .testimonialsItem{
-    width: 100%;
+    width: 50%;
+    padding: 0 2em;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
 .testimonialsImgContainer{
-    width: 100px ;
-    height: 100px;
+    width: 50px ;
+    height: 50px;
+    margin-left: 4em;
+    margin-right: 1em;
     @include border-radius(50%);
     overflow: hidden;
-    box-shadow: 0 19px 38px rgba(0,0,0,0.075), 0 15px 12px rgba(0,0,0,0.075);        
-    margin-right: 5em;
+    // box-shadow: 0 19px 38px rgba(0,0,0,0.075), 0 15px 12px rgba(0,0,0,0.075);        
 }
 
 .testimonialsImg{
     max-width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .testimonialInfo{
     width: 50%;
+    padding: 2em 1em;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
+    align-content: center;
 }
 
 .testimonialsText{
+    width: 50%;
     // text-shadow: 0 19px 38px rgba(0,0,0,0.075), 0 15px 12px rgba(0,0,0,0.075);            
     position: relative;
     z-index: 2;
+    background: $orange;
+    color : #fff;
+    padding: 1em;
+    // border-radius: 5px;
+
+    &:after{
+        content: "";
+        background: $orange;
+        width: 20px;height: 20px;
+        position: absolute;
+        bottom: -10px;left: calc(50% - 10px);
+        transform: rotateZ(45deg);
+    }
 }
 
 .nameUser{
     font-weight: 600;
-    font-size:32px;
-    margin: 1em 0;
     position: relative;
     z-index: 3;
     // text-shadow: 0 19px 38px rgba(0,0,0,0.075), 0 15px 12px rgba(0,0,0,0.075);            
+}
+
+.infoText{
+    width: 50%;
 }
 
 .mobile{
@@ -529,7 +552,7 @@ body{
 .mobileImage{
     max-width: 30%;
     position: relative;
-    bottom:-5%; 
+    opacity: 0;
     
     &:nth-child(1){
         bottom: -100%;
@@ -650,6 +673,7 @@ body{
 
 @keyframes showingReverse{
     0%{
+        position: relative;
         bottom: -100%;
         opacity: 0;
     }
