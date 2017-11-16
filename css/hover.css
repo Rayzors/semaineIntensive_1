@@ -31,3 +31,12 @@
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
+
+.containerDivider {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;}
+
+.dividerSquares {
+  height: 7px;
+  width: 7px;}
