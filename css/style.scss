@@ -193,7 +193,7 @@ body{
         &:after{
             content: "";
             position: absolute;
-            bottom: 0;left: 2em;
+            bottom: 0;left: 1.5em;
             width: 30%;
             height: 7px;
             background: $orange;
@@ -341,21 +341,9 @@ body{
 }
 
 .modelsLongboard{
-    width: 33.333%;
-    min-height: 250px;
+    width: 33.3333%;
     text-align: center;
-    border-right: 1px solid $orange;
-    border-top: 1px solid $orange;
-    border-bottom: 1px solid $orange;
-
-    .modelsImg{
-        border-bottom: 1px solid $orange;
-    }
-    
-}
-
-.modelsLongboard:last-child{
-    border-right: none; 
+    padding: 0.875em;
 }
 
 .modelsInfo ul{
@@ -363,9 +351,10 @@ body{
 }
 
 .modelsImg{
-    object-fit: contain;
+    object-fit: cover;
     max-width: 100%;
-    height: auto;
+    height: 100%;
+    border: 1px solid $orange;
 }
 
 .testimonialsContainer{
