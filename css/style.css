@@ -237,7 +237,7 @@ body {
 .searchButton:hover {
   cursor: pointer; }
 
-.concept, .offers, .testimonials, .models {
+.concept, .offers, .testimonials, .models, .sponsors {
   padding: 8em 0;
   background: #FFFDFC; }
 
@@ -536,62 +536,9 @@ body {
   bottom: -5%; }
 
 .sponsors {
-  background: #f7f7f7; }
+  background: #f7f7f7;}
 
-.sponsorsContainer {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1em; }
 
-.sponsorsImageContainer {
-  height: 70px;
-  max-width: 100px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center; }
-
-.sponsorsImage {
-  max-width: 100%;
-  max-height: 100%; }
-
-.footer {
-  background: #252626;
-  color: #fff;
-  padding-top: 5em;
-  font-size: 13px; }
-.footer a {
-  color: #ff6a00;
-  text-decoration: none; }
-.footer .miniTitle {
-  text-align: left;
-  margin-bottom: 1em; }
-
-.footernav {
-  width: 100%;
-  display: flex;
-  flex-flow: row wrap; }
-
-.apropos {
-  width: 100%;
-  display: flex;
-  flex-flow: column wrap;
-  margin-bottom: 5em; }
-
-.footerContainer {
-  width: 100%;
-  display: flex;
-  flex-flow: column wrap; }
-
-.footerBlock {
-  width: 33.3333%; }
-
-.bottomFooterContainer {
-  text-align: center;
-  padding-top: 3em;
-  padding-bottom: 1em; }
 
 @keyframes navbar {
   0% {
