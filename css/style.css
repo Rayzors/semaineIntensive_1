@@ -251,6 +251,7 @@ body {
 .boldDot {
   color: #FF6100;
   font-weight: 900;
+  font-size: 100px;
 }
 
 .conceptItem {
