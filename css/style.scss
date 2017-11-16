@@ -171,7 +171,16 @@ body {
     overflow: hidden;
     position: relative;
     background: #fff;
-    border: 2px solid $orange; // box-shadow: 0 19px 38px rgba(0,0,0,0.075), 0 15px 12px rgba(0,0,0,0.075);        
+    border: 2px solid $orange;        
+    text-decoration: none;
+    color: $noir;
+    display: block;
+    transition: 0.26s ease;
+
+    &:hover{
+        box-shadow: 0 19px 38px rgba(0,0,0,0.075), 0 15px 12px rgba(0,0,0,0.075);
+    }
+    
     .miniTitle {
         text-transform: uppercase;
         letter-spacing: 2px;
