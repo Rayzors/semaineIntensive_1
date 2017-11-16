@@ -32,12 +32,16 @@
   transform: scaleX(1);
 }
 
+.dividerBg {
+  background: #FFFDFC;
+}
 .containerDivider {
   display: flex;
   justify-content: space-between;
-  width: 40%;}
+  width: 15%;
+  margin: 0 auto;}
 
 .dividerSquares {
   height: 7px;
   width: 7px;
-  color: #FF6A00;}
+  background: #FF6A00;}
