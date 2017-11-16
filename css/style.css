@@ -302,7 +302,8 @@ body {
   overflow: hidden;
   position: relative;
   background: #fff;
-  border: 1px solid #ff6a00; }
+  border: 2px solid #ff6a00;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.075), 0 15px 12px rgba(0, 0, 0, 0.075); }
 .offersItem .miniTitle {
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -398,17 +399,61 @@ body {
 
 .modelsLongboard {
   width: 33.3333%;
+  height: 250px;
   text-align: center;
-  padding: 0.875em; }
+  padding: 0.875em;
+  position: relative; }
+.modelsLongboard .miniTitle {
+  color: #ffffff;
+  padding: 0.5em;
+  position: relative;
+  letter-spacing: 2px;
+  font-size: 25px; }
+.modelsLongboard .miniTitle:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30%;
+  height: 7px;
+  background: #ff6a00; }
+.modelsLongboard .overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  opacity: 0;
+  transition: 0.26s ease;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center; }
+.modelsLongboard:hover .overlay {
+  opacity: 1; }
+.modelsLongboard:hover .modelsImg {
+  transform: translateZ(100px);
+  transition: 10s linear; }
 
 .modelsInfo ul {
   margin-bottom: 2em; }
 
+.imgContainer {
+  border: 2px solid #ff6a00;
+  overflow: hidden;
+  perspective: 200px;
+  height: 100%;
+  width: 100%; }
+
 .modelsImg {
   object-fit: cover;
   max-width: 100%;
-  height: 100%;
-  border: 1px solid #ff6a00; }
+  transform: translateZ(0);
+  transition: 1s linear;
+  position: relative;
+  z-index: 1; }
 
 .testimonialsContainer {
   display: flex;
@@ -461,9 +506,22 @@ body {
   padding-top: 5em;
   background: #FFFDFC; }
 
+.storeButtonContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center; }
+
+.storeButtonLink {
+  display: inline-block;
+  margin: 0 1em; }
+
+.storeButton {
+  width: 150px; }
+
 .mobileContainer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center; }
 
