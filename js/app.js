@@ -3,6 +3,10 @@ var headerH = header.offsetHeight;
 var navbar = document.querySelector(".navbar");
 var toShow = document.querySelectorAll(".toShow");
 
+var slider = document.querySelector(".testimonialsContainer");
+var sliderW = slider.style.width;
+var sliderPage = sliderW/2;
+
 var stickynav = function(){
 
     if(window.innerWidth > 640){
@@ -29,6 +33,10 @@ var spyshow = function(){
     }
 }
 
+var sliderf = function(){
+    slider.style.transform = "translateX(" + sliderPage * -1 +"px)";
+}
+
 window.addEventListener('scroll', function(){
     stickynav();
     spyshow();
@@ -43,3 +51,6 @@ window.addEventListener('resize', function(){
     stickynav();
     spyshow();
 });
+
+sliderf();
+

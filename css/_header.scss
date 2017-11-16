@@ -83,10 +83,62 @@
     letter-spacing: 2px;
     font-size: 12px;
     margin-left: 1.5em;
+    padding-bottom: 10px;
+    position: relative;    
+    
 
     &:hover{
         text-decoration: underline
     }
+
+    &:before {
+        content: "";
+        position: absolute;
+        width: 70%;
+        height: 3px;
+        bottom: 0;
+        left: 15%;
+        right: 15%;
+        background-color: #fff;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.26s ease-in-out 0s;
+        transition: all 0.26s ease-in-out 0s;
+      }
+      
+      &:hover:before {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+      }
+}
+
+.fleche {
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 19px);
+    padding-bottom: 1em;
+}
+
+.dividerBg {
+    background: #FFFDFC;
+}
+.containerDivider {
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+    margin: 0 auto;
+}
+
+.dividerSquares {
+    height: 7px;
+    width: 7px;
+    background: #FF6A00;
+}
+
+.testimonialGrabber {
+font-weight: 600;
 }
 
 .edito{

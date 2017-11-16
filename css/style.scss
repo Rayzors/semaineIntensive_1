@@ -65,7 +65,7 @@ body{
 
 @import "header";
 
-.concept, .offers, .testimonials, .models{
+.concept, .offers, .testimonials, .models, .sponsors{
     padding: 8em 0;
     background: $blanc_bg;
 }
@@ -361,6 +361,7 @@ body{
         position: relative;
         letter-spacing: 2px;
         font-size: 25px;
+        text-transform: uppercase;
 
         &:after{
             content: "";
@@ -425,6 +426,7 @@ body{
     justify-content: center;
     align-items: center;
     width: 200%;
+    transform: translateX(0px);
 }
 
 .testimonialsItem{
@@ -569,78 +571,91 @@ body{
 }
 
 .sponsors{
-    background: #f7f7f7;
+    background: $blanc_bg;
+
+    .sectionTitle{
+        opacity: 1;
+    }
 }
 
-.sponsorsContainer{
+.sponsorsContainer {
+    width: 70%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
     padding: 1em;
 }
 
-.sponsorsImageContainer{
+.sponsorsImageContainer {
     height: 70px;
-    max-width: 100px;
+    max-width: 30%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
 }
 
-.sponsorsImage{
+.sponsorsImage {
     max-width: 100%;
-    max-height:100%;
 }
+  
 
 
-.footer{
-    background: $noir;
+.footer {
+    background: #252626;
     color: #fff;
-    padding-top: 5em;
+    padding-top: 1em;
     font-size: 13px;
-
-    a{
-        color: $orange;
-        text-decoration: none;
-    }
-
-    .miniTitle{
-        text-align: left;
-        margin-bottom: 1em;
-    }
-}
-
-.footernav{
+  }
+  
+  .footerContainer {
+    width: 70%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1em; }
+  
+  .apropos {
+    width: 40%;
+    display: flex;
+    flex-flow: column wrap;
+    margin-bottom: 1em;
+    margin-right: 5em;}
+  
+  .footer a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;}
+  
+  .footer .subTitle {
+    text-align: left;
+    margin-bottom: 1em;
+    font-size: 13px;}
+  
+  .footerNav {
     width: 100%;
     display: flex;
     flex-flow: row wrap;
-}
-
-.apropos{
-    width: 100%;
-    display: flex;
-    flex-flow: column wrap;
-    margin-bottom: 5em;
-    
-}
-
-.footerContainer{
-    width: 100%;
-    display: flex;
-    flex-flow: column wrap ;
-}
-
-.footerBlock{
-    width: 33.3333%;
-}
-
-.bottomFooterContainer{
+    }
+  
+  .footerHelp {
+    width: 25%; }
+  
+  .footerContact {
+    width: 25%;
+  }
+  .contactItems {
+    font-weight: 300;}
+  
+  .copyrightContainer {
     text-align: center;
-    padding-top: 3em;
-    padding-bottom: 1em;
-}
+    padding-top: 1em;
+    padding-bottom: 1em; }
+  
 
 @keyframes navbar{
     0%{
