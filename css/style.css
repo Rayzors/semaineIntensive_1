@@ -240,6 +240,10 @@ body {
 .testimonials {
   background: #FFD2B2; }
 
+.orangeText {
+  color: #FF6A00;
+  font-weight: 600; }
+  
 .boldText {
   color: #000000;
   font-weight: 600; }
