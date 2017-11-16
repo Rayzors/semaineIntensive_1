@@ -79,6 +79,17 @@ body{
     font-weight: 600;
 }
 
+.boldText {
+    color: #000000;
+    font-weight: 600;
+}
+  
+.boldDot {
+    color: #FF6100;
+    font-weight: 900;
+    font-size: 30px;
+}
+
 // .concept{
 //     position: relative;
 
@@ -165,6 +176,7 @@ body{
 }
 
 .offersItem{
+    height: 100%;
     overflow: hidden;
     position: relative;
     background: #fff;
@@ -190,10 +202,16 @@ body{
 
     .resume, .offersPrice{
         padding: 2.188em 3em;
-        font-size: 20px;
+        font-size: 16px;
+    }
+
+    .resume{
+        margin-bottom: 7em;
     }
 
     .offersPrice{
+        position: absolute;
+        bottom: 0;
         padding-top: 0;
         padding-bottom: 0.5em;
     }
@@ -278,7 +296,7 @@ body{
 
 .button{
     display: block;
-    padding: 0.5em 1.5em;
+    padding: 0.5em 1.5em !important;
     background: transparent;
     color: $orange;
     text-decoration: none;
@@ -288,11 +306,26 @@ body{
     @include transition(background 0.26s ease);
     z-index: 3;
 
+    &:before{
+        opacity:0;
+    }
+
     &:hover{
         text-decoration: none !important;
         background: $orange;
         color: #ffffff !important;
+
+        &:before{
+            opacity:0;
+        }
     }
+
+    
+
+    &:before{
+        opacity:0;
+    }
+
 }
 
 .link{

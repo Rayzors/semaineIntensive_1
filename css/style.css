@@ -45,10 +45,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-family: 'Gotham';
   src: url(../fonts/Gotham-Thin.otf) format("truetype"), url(../fonts/GOTHAM-THIN.TTF);
   font-weight: 300; }
-  @font-face {
-    font-family: 'Gotham';
-    src: url(../fonts/Gotham-Ultra.otf) format("truetype"), url(../fonts/GOTHAM-ULTRA.TTF);
-    font-weight: 900; }
+@font-face {
+  font-family: 'Gotham';
+  src: url(../fonts/Gotham-Ultra.otf) format("truetype"), url(../fonts/GOTHAM-ULTRA.TTF);
+  font-weight: 900; }
 * {
   box-sizing: border-box; }
 
@@ -245,7 +245,7 @@ body {
   background: #FFD2B2; }
 
 .orangeText {
-  color: #FF6A00;
+  color: #ff6a00;
   font-weight: 600; }
 
 .boldText {
@@ -255,8 +255,7 @@ body {
 .boldDot {
   color: #FF6100;
   font-weight: 900;
-  font-size: 30px;
-}
+  font-size: 30px; }
 
 .conceptItem {
   text-align: center; }
@@ -299,6 +298,7 @@ body {
   height: 100px; }
 
 .offersItem {
+  height: 100%;
   overflow: hidden;
   position: relative;
   background: #fff;
@@ -319,8 +319,12 @@ body {
   background: #ff6a00; }
 .offersItem .resume, .offersItem .offersPrice {
   padding: 2.188em 3em;
-  font-size: 20px; }
+  font-size: 16px; }
+.offersItem .resume {
+  margin-bottom: 7em; }
 .offersItem .offersPrice {
+  position: absolute;
+  bottom: 0;
   padding-top: 0;
   padding-bottom: 0.5em; }
 .offersItem .bigPrice {
@@ -359,7 +363,7 @@ body {
 
 .button {
   display: block;
-  padding: 0.5em 1.5em;
+  padding: 0.5em 1.5em !important;
   background: transparent;
   color: #ff6a00;
   text-decoration: none;
@@ -372,10 +376,16 @@ body {
   -webkit-transition: background 0.26s ease;
   transition: background 0.26s ease;
   z-index: 3; }
+.button:before {
+  opacity: 0; }
 .button:hover {
   text-decoration: none !important;
   background: #ff6a00;
   color: #ffffff !important; }
+.button:hover:before {
+  opacity: 0; }
+.button:before {
+  opacity: 0; }
 
 .link {
   color: #ff6a00;
