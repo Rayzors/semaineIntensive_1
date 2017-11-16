@@ -181,7 +181,7 @@ body{
     position: relative;
     background: #fff;
     border: 2px solid $orange;
-    box-shadow: 0 19px 38px rgba(0,0,0,0.075), 0 15px 12px rgba(0,0,0,0.075);        
+    // box-shadow: 0 19px 38px rgba(0,0,0,0.075), 0 15px 12px rgba(0,0,0,0.075);        
 
     .miniTitle{
         text-transform: uppercase;
@@ -346,6 +346,12 @@ body{
     text-align: center;
     padding: 0.875em;
     position: relative;
+    opacity: 0;
+    top: 0;
+
+    &.showed{
+        animation: showing 0.26s ease forwards !important;        
+    }
     
     .miniTitle{
         color: #ffffff;
@@ -472,7 +478,7 @@ body{
 
 .storeButtonContainer{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: colum wrap;
     justify-content: center;
     align-items: center;
 }
@@ -493,15 +499,50 @@ body{
     justify-content: center;
 }
 
-
 .mobileImageContainer{
-    max-width: 50%;
+    max-width: 100%;
+    padding-top: 2em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: baseline;
+
+ 
+    &.showed .mobileImage{
+        &:nth-child(1){
+            animation: showingReverse 0.26s ease 0.0s forwards !important;
+            
+        }
+        &:nth-child(2){
+            animation: showingReverse 0.26s ease 0.1s forwards !important;
+            
+        }
+        &:nth-child(3){
+            animation: showingReverse 0.26s ease 0.2s forwards !important;
+            
+        }
+        
+    }
+
 }
 
 .mobileImage{
-    max-width: 100%;
+    max-width: 30%;
     position: relative;
-    bottom:-5%;    
+    bottom:-5%; 
+    
+    &:nth-child(1){
+        bottom: -100%;
+        right: -10%;
+    }
+    &:nth-child(2){
+        bottom: -100%;
+        z-index: 3;
+    }
+    &:nth-child(3){
+        bottom: -100%;
+        left: -10%;
+    }
 }
 
 .sponsors{
@@ -603,6 +644,17 @@ body{
     }
     100%{
         top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes showingReverse{
+    0%{
+        bottom: -100%;
+        opacity: 0;
+    }
+    100%{
+        bottom: -10%;
         opacity: 1;
     }
 }

@@ -23,7 +23,7 @@ var stickynav = function(){
 var spyshow = function(){
     for (let i = 0; i < toShow.length; i++) {
         var element = toShow[i];
-        if (element.offsetTop < scrollY + (window.innerHeight /1.5)) {
+        if (element.offsetTop < scrollY + (window.innerHeight /1.8)) {
             element.classList.add("showed");
         }
     }
