@@ -32,6 +32,13 @@
   transform: scaleX(1);
 }
 
+.fleche {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 19px);
+  padding-bottom: 1em;
+}
+
 .dividerBg {
   background: #FFFDFC;
 }
@@ -49,3 +56,77 @@
 .testimonialGrabber {
   font-weight: 600;
 }
+
+.sponsorsContainer {
+  width: 70%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 1em; }
+
+.sponsorsImageContainer {
+  height: 70px;
+  max-width: 100px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center; }
+
+.sponsorsImage {
+  max-width: 220%;
+  max-height: 220%; }
+
+.footer {
+  background: #252626;
+  color: #fff;
+  padding-top: 1em;
+  font-size: 13px;
+}
+
+.footerContainer {
+  width: 70%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 1em; }
+
+.apropos {
+  width: 40%;
+  display: flex;
+  flex-flow: column wrap;
+  margin-bottom: 1em;
+  margin-right: 5em;}
+
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;}
+
+.footer .subTitle {
+  text-align: left;
+  margin-bottom: 1em;
+  font-size: 13px;}
+
+.footerNav {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  }
+
+.footerHelp {
+  width: 25%; }
+
+.footerContact {
+  width: 25%;
+}
+.contactItems {
+  font-weight: 300;}
+
+.copyrightContainer {
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em; }
