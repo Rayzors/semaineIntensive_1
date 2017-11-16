@@ -217,7 +217,8 @@ body {
   -webkit-transition: ease 0.26s;
   transition: ease 0.26s; }
 .searchbar:focus {
-  color: #252626; }
+  color: #252626;
+  border: none; }
 
 .searchButton {
   width: 10%;
@@ -475,7 +476,7 @@ body {
   bottom: -5%; }
 
 .sponsors {
-  background: #FFFDFC; }
+  background: #f7f7f7; }
 
 .sponsorsContainer {
   display: flex;
