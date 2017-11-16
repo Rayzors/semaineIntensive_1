@@ -243,10 +243,15 @@ body {
 .orangeText {
   color: #FF6A00;
   font-weight: 600; }
-  
+
 .boldText {
   color: #000000;
   font-weight: 600; }
+
+.boldDot {
+  color: #FF6100;
+  font-weight: 900;
+}
 
 .conceptItem {
   text-align: center; }
