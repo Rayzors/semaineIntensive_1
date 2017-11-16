@@ -1,0 +1,33 @@
+.menulink {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  padding-bottom: 10px;
+}
+
+.menulink:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menulink:before {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 3px;
+  bottom: 0;
+  left: 15%;
+  right: 15%;
+  background-color: #fff;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.26s ease-in-out 0s;
+  transition: all 0.26s ease-in-out 0s;
+}
+
+.menulink:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
