@@ -4,8 +4,10 @@ var navbar = document.querySelector(".navbar");
 var toShow = document.querySelectorAll(".toShow");
 
 var slider = document.querySelector(".testimonialsContainer");
-var sliderW = slider.style.width;
-var sliderPage = sliderW/2;
+var sliderItemW = document.querySelector('.testimonialsItem').offsetWidth * 2;
+var sliderW = slider.offsetWidth;
+var sliderPage = Math.round(sliderW/sliderItemW);
+var count = 1;
 
 var stickynav = function(){
 
@@ -34,7 +36,16 @@ var spyshow = function(){
 }
 
 var sliderf = function(){
-    slider.style.transform = "translateX(" + sliderPage * -1 +"px)";
+    setInterval(function(){
+        if (count == sliderPage) {
+            slider.style.transform = "translateX(0)";
+            count--;
+            
+        }else if(count < sliderPage){
+            slider.style.transform = "translateX(" + -sliderItemW + "px)";
+            count++;
+        }
+    }, 5000);
 }
 
 window.addEventListener('scroll', function(){
