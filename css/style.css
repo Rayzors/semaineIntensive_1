@@ -45,6 +45,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-family: 'Gotham';
   src: url(../fonts/Gotham-Thin.otf) format("truetype"), url(../fonts/GOTHAM-THIN.TTF);
   font-weight: 300; }
+  @font-face {
+    font-family: 'Gotham';
+    src: url(../fonts/Gotham-Ultra.otf) format("truetype"), url(../fonts/GOTHAM-ULTRA.TTF);
+    font-weight: 900; }
 * {
   box-sizing: border-box; }
 
