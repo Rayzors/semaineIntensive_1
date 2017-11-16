@@ -30,10 +30,16 @@ var spyshow = function(){
 }
 
 window.addEventListener('scroll', function(){
-    
     stickynav();
-
-
     spyshow();
-    
+});
+
+document.addEventListener('load', function(){
+    stickynav();
+    spyshow();
+});
+
+window.addEventListener('resize', function(){
+    stickynav();
+    spyshow();
 });
