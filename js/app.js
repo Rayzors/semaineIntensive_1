@@ -53,7 +53,7 @@ window.addEventListener('scroll', function(){
     spyshow();
 });
 
-document.addEventListener('load', function(){
+window.addEventListener('load', function(){
     stickynav();
     spyshow();
 });
