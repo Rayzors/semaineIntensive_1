@@ -14,8 +14,7 @@ body {
 }
 
 .toShow {
-    // position: relative;
-    // z-index: 5;
+    opacity: 0;
 }
 
 .icon {
@@ -51,8 +50,6 @@ body {
     margin-top: -1em;
     margin-bottom: 2em;
     position: relative;
-    opacity: 0;
-    top: 0;
     &.showed {
         animation: showing 0.26s ease forwards;
     }
@@ -119,8 +116,6 @@ body {
     width: 33.333%;
     padding: 0 20px;
     position: relative;
-    opacity: 0;
-    top: 0;
     &.showed {
         animation: showing 0.5s ease forwards;
     }
@@ -501,34 +496,36 @@ body {
     flex-flow: row wrap;
     justify-content: center;
     align-items: baseline;
-    &.showed .mobileImage {
-        &:nth-child(1) {
-            animation: showingReverse 0.26s ease 0.0s forwards !important;
-        }
-        &:nth-child(2) {
-            animation: showingReverse 0.26s ease 0.1s forwards !important;
-        }
-        &:nth-child(3) {
-            animation: showingReverse 0.26s ease 0.2s forwards !important;
-        }
-    }
 }
 
 .mobileImage {
     max-width: 30%;
     position: relative;
-    opacity: 0;
+
+    
     &:nth-child(1) {
-        bottom: -100%;
+        bottom: 0;
         right: -10%;
+
+        &.showed{
+            @include animation(showingReverse 0.26s ease 0.0s forwards !important);            
+        }
     }
     &:nth-child(2) {
-        bottom: -100%;
+        bottom: 0;
         z-index: 3;
+
+        &.showed{
+            @include animation(showingReverse 0.26s ease 0.1s forwards !important);            
+        }
     }
     &:nth-child(3) {
-        bottom: -100%;
+        bottom: 0;
         left: -10%;
+
+        &.showed{
+            @include animation(showingReverse 0.26s ease 0.2s forwards !important);            
+        }
     }
 }
 
@@ -647,24 +644,35 @@ body {
 
 @keyframes showing {
     0% {
-        top: -20%;
+        transform: translateY(-100px);
         opacity: 0;
     }
     100% {
-        top: 0;
+        transform: translateY(0);
         opacity: 1;
     }
 }
 
-@keyframes showingReverse {
+@-webkit-keyframes showingReverse {
     0% {
-        bottom: -100%;
+        transform: translateY(300px);
         opacity: 0;
     }
     100% {
-        bottom: -10%;
+        transform: translateY(0);
         opacity: 1;
     }
 }
+@keyframes showingReverse {
+    0% {
+        transform: translateY(300px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 
 @import "responsive";
