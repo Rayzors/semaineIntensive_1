@@ -81,7 +81,8 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 5px;
+  padding-left: 1em !important;
+  padding-right: 1em !important;
   z-index: 5; }
 
 .sectionTitle {
@@ -100,6 +101,57 @@ body {
   position: relative;
   overflow: hidden; }
 
+@media only screen and (max-width: 40em) {
+  .menu {
+    width: 100%;
+    display: none; }
+
+  .menuButton {
+    display: block !important;
+    color: #ffffff; }
+
+  .logoContainer {
+    max-width: 30% !important; }
+
+  .navBarContainer {
+    display: flex;
+    height: 100%;
+    align-items: flex-start !important; }
+
+  .inline-list {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center; }
+  .inline-list li {
+    text-align: center; }
+
+  .menulink {
+    display: block;
+    margin: 0 !important;
+    padding: 2em 0; }
+  .menulink.button {
+    margin-top: 2em !important; }
+
+  .navbar.--open {
+    background: #252626;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 5; }
+  .navbar.--open .menu {
+    display: block; }
+
+  .edito p {
+    font-size: 26px !important; }
+
+  .searchbarItemsContainer {
+    width: 100% !important; }
+  .searchbarItemsContainer .searchbar {
+    width: 80% !important; }
+  .searchbarItemsContainer .searchButton {
+    width: 20% !important; } }
 .headerVideo {
   position: fixed;
   right: 0;
@@ -153,6 +205,18 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center; }
+
+.menuButton {
+  display: none;
+  width: 30px; }
+.menuButton:hover {
+  cursor: pointer; }
+.menuButton span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  margin: 5px 0;
+  background: #ffffff; }
 
 .inline-list li {
   display: inline-block; }
@@ -580,6 +644,9 @@ body {
   padding-top: 5em;
   background: #FFFDFC; }
 
+@media only screen and (max-width: 40em) {
+  .storeButton {
+    width: 100px !important; } }
 .storeButtonContainer {
   display: flex;
   flex-flow: colum wrap;

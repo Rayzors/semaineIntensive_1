@@ -39,7 +39,8 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 5px;
+    padding-left: 1em !important;
+    padding-right: 1em !important;
     z-index: 5;
 }
 
@@ -464,6 +465,12 @@ body {
     overflow: hidden;
     padding-top: 5em;
     background: $blanc_bg;
+}
+
+@media only screen and (max-width: 40em){
+    .storeButton{
+        width: 100px !important;
+    }
 }
 
 .storeButtonContainer {

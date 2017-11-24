@@ -5,6 +5,76 @@
     overflow: hidden;
 }
 
+@media only screen and (max-width: 40em){
+    .menu{
+        width: 100%;
+        display: none;
+    }
+    
+    .menuButton{
+        display: block !important;
+        color: #ffffff;
+    }
+
+    .logoContainer{
+        max-width: 30% !important;
+    }
+
+    .navBarContainer{
+        display: flex;
+        height: 100%;
+        align-items: flex-start !important;
+    }
+
+    .inline-list{
+        width: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+
+        li{
+            text-align: center;
+        }
+    }
+
+    .menulink{
+        display: block;
+        margin: 0 !important;
+        padding: 2em 0;
+
+        &.button{
+            margin-top: 2em !important;
+        }
+    }
+    
+
+    .navbar.--open{
+        background: $noir;
+        position: fixed;
+        top: 0;bottom: 0;
+        z-index: 5;
+        .menu{
+            display: block;
+        }
+    }
+
+    .edito p{
+        font-size: 26px !important;
+    }
+
+    .searchbarItemsContainer{
+        width: 100% !important;
+
+        .searchbar{
+            width: 80% !important;
+        }
+        .searchButton{
+            width: 20% !important;
+        }
+    }
+}
+
 .headerVideo{
     position: fixed; right: 0; bottom: 0;
     min-width: 100%; min-height: 100%;
@@ -67,6 +137,23 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+.menuButton{
+    display: none;
+    width: 30px;
+
+    &:hover{
+        cursor: pointer;
+    }
+
+    span{
+        display: block;
+        height: 2px;
+        width: 100%;
+        margin: 5px 0;
+        background: #ffffff;
+    }
 }
 
 .inline-list{
