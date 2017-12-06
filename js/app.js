@@ -6,6 +6,9 @@ var menuButton = document.querySelector(".menuButton");
 
 var slider = document.querySelector(".testimonialsContainer");
 var sliderItemW = document.querySelector('.testimonialsItem').offsetWidth * 2;
+if(window.innerWidth < 400){
+    var sliderItemW = document.querySelector('.testimonialsItem').offsetWidth;
+}
 var sliderW = slider.offsetWidth;
 var sliderPage = Math.round(sliderW/sliderItemW);
 var count = 1;
@@ -28,10 +31,12 @@ var stickynav = function(){
 }
 
 var spyshow = function(){
-    for (let i = 0; i < toShow.length; i++) {
-        var element = toShow[i];
-        if (element.offsetTop < scrollY + (window.innerHeight /1.8)) {
-            element.classList.add("showed");
+    if(window.innerWidth > 400){
+        for (let i = 0; i < toShow.length; i++) {
+            var element = toShow[i];
+            if (element.offsetTop < scrollY + (window.innerHeight /1.2)) {
+                element.classList.add("showed");
+            }
         }
     }
 }
@@ -39,14 +44,14 @@ var spyshow = function(){
 var sliderf = function(){
     setInterval(function(){
         if (count == sliderPage) {
-            slider.style.transform = "translateX(0)";
-            count--;
+            slider.style.transform = "";
+            count = 1;
             
         }else if(count < sliderPage){
-            slider.style.transform = "translateX(" + -sliderItemW + "px)";
+            slider.style.transform = "translateX(" + (-sliderItemW * count) + "px)";
             count++;
         }
-    }, 5000);
+    }, 4000);
 }
 
 menuButton.addEventListener('click', function(){

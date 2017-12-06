@@ -380,7 +380,8 @@ body {
 
 .modelsImg {
     object-fit: cover;
-    max-width: 100%; // height: 100%;
+    width: 100%;
+    height: 100%;
     transform: translateZ(0);
     transition: 1s linear;
     position: relative;
@@ -392,7 +393,7 @@ body {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     width: 200%;
     transform: translateX(0px);
     transition: 0.5s ease;
@@ -411,7 +412,6 @@ body {
 .testimonialsImgContainer {
     width: 50px;
     height: 50px;
-    margin-left: 4em;
     margin-right: 1em;
     @include border-radius(50%);
     overflow: hidden; // box-shadow: 0 19px 38px rgba(0,0,0,0.075), 0 15px 12px rgba(0,0,0,0.075);        
@@ -430,6 +430,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
+    justify-content: center;
 }
 
 .testimonialsText {
@@ -457,21 +458,12 @@ body {
     z-index: 3; // text-shadow: 0 19px 38px rgba(0,0,0,0.075), 0 15px 12px rgba(0,0,0,0.075);            
 }
 
-.infoText {
-    width: 50%;
-}
-
 .mobile {
     overflow: hidden;
     padding-top: 5em;
     background: $blanc_bg;
 }
 
-@media only screen and (max-width: 40em){
-    .storeButton{
-        width: 100px !important;
-    }
-}
 
 .storeButtonContainer {
     display: flex;
@@ -549,6 +541,7 @@ body {
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
+    align-content: center;
     margin: 0 auto;
     padding: 1em;
 }
@@ -681,5 +674,5 @@ body {
     }
 }
 
-
-@import "responsive";
+@import "responsive_tablet";
+@import "responsive_mobile";

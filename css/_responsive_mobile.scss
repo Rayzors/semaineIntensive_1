@@ -1,0 +1,116 @@
+@media only screen and (max-width: 40em){
+
+    .toShow{
+        opacity: 1;
+    }
+
+    .inColumn{
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        padding: 2em 1em;
+    }
+
+    .sectionTitle{
+        padding: 0 1em;
+    }
+
+    .menu{
+        width: 100%;
+        height: 100%;
+        display: none;
+        overflow: scroll;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .menuButton{
+        display: block;
+        color: #ffffff;
+    }
+
+    .logoContainer{
+        max-width: 30%;
+    }
+
+    .navBarContainer{
+        display: flex;
+        height: 100%;
+        align-items: flex-start;
+    }
+
+    .inline-list{
+        width: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        
+        padding: 5em 0;
+
+        li{
+            text-align: center;
+        }
+    }
+
+    .menulink{
+        display: block;
+        margin: 0;
+        padding: 2em 0;
+
+        &.button{
+            margin-top: 2em;
+        }
+    }
+    
+
+    .navbar.--open{
+        background: $noir;
+        position: fixed;
+        top: 0;bottom: 0;
+        z-index: 5;
+        .menu{
+            display: flex;
+        }
+    }
+
+    .edito p{
+        font-size: 26px;
+    }
+
+    .searchbarItemsContainer{
+        width: 100%;
+
+        .searchbar{
+            width: 80%;
+        }
+        .searchButton{
+            width: 20%;
+        }
+    }
+
+    .testimonialsContainer{
+        width: 400%;
+    }
+
+    .testimonialsText{
+        width: 100%;
+    }
+
+    .testimonialInfo{
+        width: 100%;
+    }
+
+    .sponsorsContainer{
+        width: 100%;
+    }
+
+    .storeButton{
+        width: 100px ;
+    }
+
+    .apropos{
+        margin-right: 0;
+    }
+}

@@ -1,0 +1,66 @@
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+    .menu{
+        width: 100%;
+        display: none;
+    }
+    
+    .menuButton{
+        display: block;
+        color: #ffffff;
+    }
+
+    .logoContainer{
+        max-width: 19%;
+    }
+
+    .navBarContainer{
+        display: flex;
+        height: 100%;
+        align-items: flex-start;
+    }
+
+    .inline-list{
+        width: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+
+        li{
+            text-align: center;
+        }
+    }
+
+    .menulink{
+        display: block;
+        margin: 0;
+        padding: 2em 0;
+
+        &.button{
+            margin-top: 2em;
+        }
+    }
+    
+
+    .navbar.--open{
+        background: $noir;
+        position: fixed;
+        top: 0;bottom: 0;
+        z-index: 5;
+        .menu{
+            display: block;
+        }
+    }
+
+    .edito p{
+        font-size: 26px;
+    }
+
+    .offersContainer{
+        justify-content: center;
+    }
+    .offersItemContainer{
+        width: 50%;
+        margin-bottom: 3em;
+    }
+}
